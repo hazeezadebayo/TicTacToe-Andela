@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+
+
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#212121"
+            app:titleTextColor="#d3d3d3"
+            android:paddingLeft="0dp">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="40dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iclauncher" />
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="TicTacToe - ANDELA"
+                android:textColor="#E0E0E0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/activity_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#424242"
+
+            android:topLeftRadius="7dp"
+            android:topRightRadius="7dp"
+
+            >
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
